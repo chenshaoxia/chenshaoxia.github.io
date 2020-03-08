@@ -182,7 +182,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="MySQL-基本架构概览"><a href="#MySQL-基本架构概览" class="headerlink" title="MySQL 基本架构概览"></a>MySQL 基本架构概览</h2><p>下图是 MySQL 的一个简要架构图，从下图你可以很清晰的看到用户的 SQL 语句在 MySQL 内部是如何执行的。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/19994082-12b4416bf2c3a39f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="MySql基本架构图.jpg"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19994082-12b4416bf2c3a39f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/500" alt="MySql基本架构图.jpg"></p>
 <h3 id="MySQL层次划分"><a href="#MySQL层次划分" class="headerlink" title="MySQL层次划分"></a>MySQL层次划分</h3><p>1、Client层：提供连接MySQL服务器功能的常用工具集</p>
 <p>2、<strong>Server层</strong>：主要包括连接器、查询缓存、分析器、优化器、执行器等，所有跨存储引擎的功能都在这一层实现，比如存储过程、触发器、视图，函数等，还有一个通用的日志模块 binglog日志模块。</p>
 <p>3、<strong>存储引擎层</strong>： 主要负责数据的存储和读取，采用可以替换的插件式架构，支持 InnoDB、MyISAM、Memory 等多个存储引擎，其中 <strong>InnoDB 引擎有自有的日志模块 redolog 模块</strong>。现在最常用的存储引擎是 InnoDB，它从 MySQL 5.5.5 版本开始就被当做默认存储引擎了。</p>
